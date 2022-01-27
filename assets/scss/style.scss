@@ -1,7 +1,7 @@
 // Style créé par Loubal70
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 // Reset CSS
 @import 'reset.scss';
@@ -12,6 +12,8 @@
 
 // Colors
 $rose: #EE747E;
+$rose_fonce: #cb4f59;
+$rose_clair: rgb(255, 217, 220);
 
 
 ::-webkit-scrollbar {
@@ -36,7 +38,20 @@ a{
     &:hover{
         color: $rose;
     }
+
+    &.btn{
+        background-color: $rose;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 40px;
+        transition: background-color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        &:hover{
+            background-color: $rose_fonce;
+        }
+    }
 }
+
 
 .container{
     max-width: 1240px;
@@ -44,3 +59,7 @@ a{
 }
 
 @import 'component/header.scss';
+
+// Sections
+@import 'section/product.scss';
+@import 'section/artisan.scss';

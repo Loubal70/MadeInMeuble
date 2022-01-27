@@ -42,7 +42,8 @@
                     position: absolute;
                     top: -5px;
                     right: -5px;
-                    background: #C4C4C4;
+                    background: $rose;
+                    color: white;
                     width: 20px;
                     height: 20px;
                     border-radius: 50%;
@@ -87,6 +88,11 @@
                     transform: rotate(135deg);
                 }
 
+            }
+
+            &:last-child{
+                font-weight: bold;
+                color: $rose;
             }
         }
     }
