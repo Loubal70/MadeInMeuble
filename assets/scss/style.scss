@@ -58,8 +58,35 @@ a{
     margin: auto;
 }
 
+h1{
+    font-size: 37px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
 @import 'component/header.scss';
 
 // Sections
+section{
+    span.category{
+        color: $rose;
+        font-size: 20px;
+        font-weight: 700;
+
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .details{
+        margin-top: 60px;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 175%;
+    }
+}
 @import 'section/product.scss';
 @import 'section/artisan.scss';
+@import 'section/collection.scss';
