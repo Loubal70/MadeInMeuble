@@ -1,0 +1,101 @@
+.collection{
+    margin-top: 180px;
+
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "title element1"
+        "carrousel element2"
+        "carrousel element3";
+
+    &__title{
+        grid-area: title;
+    }
+
+    &__carrousel{
+        position: relative;
+        grid-area: carrousel;
+        width: fit-content;
+        height: fit-content;
+
+        img{
+            width: 600px;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        &__arrow{
+            display: flex;
+            align-items: center;
+            
+            position: absolute;
+            right: 0;
+            bottom: -37px;
+
+            button{
+                width: 74px;
+                height: 74px;
+                &:first-child{
+                    background: white;
+                    color: $rose;
+                }
+                &:nth-child(2){
+                    background: $rose;
+                    color: white;
+                }
+            }
+        }
+    }
+    &__right__element{
+        height: auto;
+
+        display: flex;
+        align-items: flex-end;
+
+        &.element-{
+            &1{
+                grid-area: element1;
+            }
+            &2{
+                grid-area: element2;
+            }
+            &3{
+                grid-area: element3;
+            }
+        }
+
+        img{
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        &__content{
+            margin-bottom: 10px;
+            margin-left: 25px;
+
+            h3{
+                font-size: 30px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            span{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 140%;
+                display: block;
+                margin-bottom: 10px;
+                width: 70%;
+            }
+            
+            a{
+                font-weight: bold;
+                i{
+                    margin-left: 35px;
+                }
+            }
+        }
+    }
+}
