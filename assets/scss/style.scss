@@ -1,0 +1,46 @@
+// Style créé par Loubal70
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+// Reset CSS
+@import 'reset.scss';
+
+:root {
+    --delay: 0s;
+}
+
+// Colors
+$rose: #EE747E;
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body{
+    background-color: #F7F3F0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.p-relative{
+    position: relative;
+    display: block;
+}
+
+a{
+    color: black;
+    transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover{
+        color: $rose;
+    }
+}
+
+.container{
+    max-width: 1240px;
+    margin: auto;
+}
+
+@import 'component/header.scss';
