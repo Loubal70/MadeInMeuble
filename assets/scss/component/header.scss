@@ -1,5 +1,6 @@
 .header{
-    
+    animation: top 1s var(--delay) both;
+
     &__top{
         display: flex;
         justify-content: space-between;

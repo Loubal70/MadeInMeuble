@@ -9,6 +9,9 @@
 :root {
     --delay: 0s;
 }
+*{
+    box-sizing: border-box;
+}
 
 // Colors
 $rose: #EE747E;
@@ -63,6 +66,22 @@ h1{
     font-weight: 600;
     margin-bottom: 20px;
     width: 80%;
+
+    span{
+        color: $rose;
+    }
+}
+
+@keyframes top {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
 }
 
 @import 'component/header.scss';
@@ -90,3 +109,4 @@ section{
 @import 'section/product.scss';
 @import 'section/artisan.scss';
 @import 'section/collection.scss';
+@import 'section/testimonials.scss';

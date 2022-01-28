@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
     <!-- Loubal70 - All Right Reserved -->
 
     <!-- Header -->
-    <header class="header container">
+    <header class="header container" style="--delay: .4s">
         <div class="header__top">
             <div class="header__left">
                 <div class="header__left__element">
@@ -197,6 +197,42 @@
         </div>
 
     </section>
+    <!-- Fin de section -->
+
+    <!-- Section : Testimonials -->
+    <section class="testimonials container">
+        <h1>Ce que nos <span>clients</span> disent</h1>
+        <div class="testimonials__content">
+            <img src="assets/img/people.png" class="testimonials__content__left" alt="Photo d'une personne">
+            <div class="testimonials__content__right">
+                <img src="assets/img/quote.svg" alt="Picto de citation">
+                <p>
+                    Les meubles sont d’excellente qualité, ils m’ont été 
+                    livré en l’espace de 2 jours ouvré. Les livreurs 
+                    m’ont même proposé de me déposer le carton dans la 
+                    pièce de mon choix. Je recommande !
+                </p>
+                <h4>Jennifer Anderson</h4>
+                <span>Architecte chez Interior Design</span>
+                
+                <div class="testimonials__content__right__arrows">
+                    <button><i class="fas fa-arrow-left"></i></button>
+                    <button><i class="fas fa-arrow-right"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Fin de section -->
     
+
+<!-- Script -->
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<script>
+     ScrollOut({
+      targets: 'section.product'
+    });
+</script>
+
 </body>
 </html>
