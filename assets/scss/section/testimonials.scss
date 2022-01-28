@@ -2,6 +2,10 @@
     margin-top: 180px;
     margin-bottom: 90px;
 
+    input[type="radio"]{
+        display: none;
+    }
+
     h1{
         text-align: center;
         width: 100%;
@@ -16,10 +20,40 @@
         position: relative;
         border-radius: 10px;
 
-        &__left:first-child{
-            margin-top: -60px;
-            margin-bottom: 60px;
-            margin-left: -60px;
+        &__left{
+            position: relative;
+            overflow: hidden;
+            /* width: 23rem; */
+            /* height: 33rem; */
+            top: -60px;
+            left: -60px;
+
+            &__wrapper{
+                position: relative;
+                // top: -60px;
+                // left: -60px;
+                // overflow: hidden;
+                display: flex;
+                transition: 350ms ease all;
+
+                &__element{
+                    width: 495px;
+                    height: 653px;
+                    flex: 0 0 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                
+                    &:first-child{
+                        background-image: url('../img/people.png');
+                    }
+    
+                    &:nth-child(2){
+                        background-image: url('../img/people-2.jpg');
+                    }
+                }
+            }
+            
+            
         }
 
         &__right{
@@ -55,7 +89,7 @@
                 display: flex;
                 align-items: center;
 
-                button{
+                label{
                     width: 50px;
                     height: 50px;
                     padding: 10px;
@@ -64,18 +98,34 @@
 
                     &:first-child{
                         background: white;
-                        color: $rose;
                         border-radius: 50%;
+                        transform: rotate(-180deg);
+                        path{
+                            fill: $rose;
+                        }
                     }
 
                     &:nth-child(2){
                         background: black;
-                        color: white;
                         border-radius: 50%;
                         margin-left: 25px;
+
+                        path{
+                            fill: white;
+                        }
                     }
                 }
             }
         }
     }
+
+    // Animation Wrapper
+    #input-2:checked ~ .testimonials__content .testimonials__content__left__wrapper{
+        transform: translateX(0%);
+    }
+
+    #input-2:checked ~ .testimonials__content .testimonials__content__left__wrapper{
+        transform: translateX(-100%);
+    }
+
 }

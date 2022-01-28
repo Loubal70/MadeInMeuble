@@ -42,7 +42,7 @@ a{
     color: black;
     transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     &:hover{
-        color: $rose!important;
+        color: $rose;
     }
 
     &.btn{
