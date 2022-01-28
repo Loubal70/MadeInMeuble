@@ -13,5 +13,10 @@ Les consignes étaient de réaliser une maquette puis la développer en desktop 
 - Requires at least : ![GULP](https://img.shields.io/badge/GULP-Required-orange)
 - Tested up to : ![NPM](https://img.shields.io/badge/NPM-6.14.15-green.svg)
 
+### Animations CSS
+Diverses animations sont proposées : 
+- Zoom en hover sur les images principales produits (Zoom supplémentaire possible avec la roulette sur la première image produit)
+- Les images ont plusieurs effets, certains dévoilent des informations, d'autre se déflouttent...
+- La section artisan a des tooltips sur les textes en gras
 
 ![banner](https://image.freepik.com/free-photo/white-wall-living-room-have-sofa-decoration-3d-rendering_41470-3282.jpg)
