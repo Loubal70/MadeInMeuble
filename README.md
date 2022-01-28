@@ -5,15 +5,13 @@
 ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-Dans le cadre d'un travail étudiant, nous avons dû re-designer une page produit du site https://www.made-in-meubles.com/. 
+Dans le cadre d'un travail étudiant, nous avons dû re-designer une page produit du site https://www.made-in-meubles.com/. <br>
 Les consignes étaient de réaliser une maquette puis la développer en desktop bloqué sous une largeur spécifique. La responsive n'était pas demandé, uniquement un travail approfondi sur les animations CSS.
 
 ## Informations
 
 - Requires at least : ![GULP](https://img.shields.io/badge/GULP-Required-orange)
 - Tested up to : ![NPM](https://img.shields.io/badge/NPM-6.14.15-green.svg)
-<br>
 
-<br>
 
 ![banner](https://image.freepik.com/free-photo/white-wall-living-room-have-sofa-decoration-3d-rendering_41470-3282.jpg)
