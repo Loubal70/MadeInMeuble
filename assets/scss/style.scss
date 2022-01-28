@@ -34,12 +34,15 @@ body{
     position: relative;
     display: block;
 }
+.zoomContainer .zoomLens{
+    user-select: none;
+}
 
 a{
     color: black;
     transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     &:hover{
-        color: $rose;
+        color: $rose!important;
     }
 
     &.btn{
