@@ -5,7 +5,8 @@
 ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-Dans le cadre d'un travail étudiant, nous avons dû re-designer une page produit du site https://www.made-in-meubles.com/. Les consignes étaient de réaliser une maquette puis la développer en desktop bloqué sous une largeur spécifique. La responsive n'était pas demandé, uniquement un travail approfondi sur les animations CSS.
+Dans le cadre d'un travail étudiant, nous avons dû re-designer une page produit du site https://www.made-in-meubles.com/. 
+Les consignes étaient de réaliser une maquette puis la développer en desktop bloqué sous une largeur spécifique. La responsive n'était pas demandé, uniquement un travail approfondi sur les animations CSS.
 
 ## Informations
 
