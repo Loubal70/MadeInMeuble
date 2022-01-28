@@ -59,6 +59,23 @@
         &__right{
             padding: 0 55px;
 
+            &__wrapper{
+                position: relative;
+                width: 600px; 
+                height: 400px;
+                overflow: hidden;
+
+                &__element{
+                    position: absolute;
+                    top: 5rem;
+                    left: 0;
+                    width: 600px;
+                    transform: translate(50px);
+                    opacity: 0;
+                    transition: 350ms ease all;
+                }
+            }
+
             img{
                 width: 74px;
                 height: 74px;
@@ -66,7 +83,7 @@
             }
             
             p{
-                margin-top: 5rem;
+                // margin-top: 5rem;
                 font-size: 20px;
                 line-height: 170%;
             }
@@ -120,12 +137,25 @@
     }
 
     // Animation Wrapper
-    #input-2:checked ~ .testimonials__content .testimonials__content__left__wrapper{
-        transform: translateX(0%);
+    #input-1:checked {
+        ~ .testimonials__content .testimonials__content__left__wrapper{
+            transform: translateX(0%);
+        }
+
+        ~ .testimonials__content .testimonials__content__right__wrapper__element:first-child{
+            opacity: 1;
+            transform: translate(0);
+        }
     }
 
-    #input-2:checked ~ .testimonials__content .testimonials__content__left__wrapper{
-        transform: translateX(-100%);
+    #input-2:checked {
+        ~ .testimonials__content .testimonials__content__left__wrapper{
+            transform: translateX(-100%);
+        }
+        ~ .testimonials__content .testimonials__content__right__wrapper__element:nth-child(2){
+            opacity: 1;
+            transform: translate(0);
+        }
     }
 
 }
