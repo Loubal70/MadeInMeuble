@@ -17,7 +17,7 @@
     <!-- Loubal70 - All Right Reserved -->
 
     <!-- Header -->
-    <header class="header container" style="--delay: .4s">
+    <header class="header container">
         <div class="header__top">
             <div class="header__left">
                 <div class="header__left__element">
@@ -67,7 +67,7 @@
 
     <!-- Section : Article -->
     <section class="product container">
-        <img src="assets/img/product-1.png" alt="Photo du produit">
+        <img src="assets/img/product-1.png" class="product__left" id="product__left" alt="Photo du produit">
 
         <div class="product__details details">
             <span class="category">
@@ -131,25 +131,31 @@
 
             <p>
                 A la fois brut et massif, le plus grand atout de cette 
-                <strong>bibliothèque industrielle</strong> est son aspect 
+                <strong title="Le style industriel est un style architectural reprenant des codes de l'architecture industrielle pour des bâtiments et des aménagements intérieurs.">bibliothèque industrielle</strong> est son aspect 
                 naturel qui amènera une réelle dose de convivialité chez vous. 
                 <br /><br />
                 Elle a été pensée de façon à proposer un meuble canon et un accessoire 
                 de rangement infaillible ! Une chose est sûre,
                 elle en impose et incontestablement partie de la tendance du moment. 
-                Conçue en pin <strong>recyclé</strong>, elle est reconnue pour 
+                Conçue en pin <strong title="Nous nous engageons à recycler le plus possible de nos déchets !">recyclé</strong>, elle est reconnue pour 
                 sa stabilité et sa robustesse.
             </p>
         </div>
         <div class="artisan__right">
             <img src="assets/img/artisan.png" alt="Artisan">
+            <div class="artisan__right__content">
+                <h3>Un savoir français</h3>
+                <p>
+                    MadeInMeuble met en valeur le savoir français ! Nos meubles sont fabriqués par des artisans français avec du bois brut MadeInFrance !
+                </p>
+            </div>
         </div>
     </section>
     <!-- Fin de section -->
 
     <!-- Section : Complèter votre collection -->
     <section class="collection container">
-        <div class="collection__title">
+        <div class="title">
             <h1>Complèter votre collection</h1>
             <p>
                 Chaque modèle est <strong>unique</strong>, il fait partie de la collection 
@@ -158,7 +164,7 @@
             </p>
         </div>
         <div class="collection__carrousel">
-            <img src="assets/img/product-1.png" alt="Photo produit">
+            <img src="assets/img/product-1.png" id="img-collection" data-zoom-image="assets/img/product-1.png" alt="Photo produit">
 
             <div class="collection__carrousel__arrow">
                 <button><i class="fas fa-arrow-left"></i></button>
@@ -166,7 +172,9 @@
             </div>
         </div>
         <div class="collection__right__element element-1">
-            <img src="assets/img/elegant.png" alt="Meuble Elegant">
+            <div class="collection__right__element__image">
+                <img src="assets/img/elegant.png" alt="Meuble Elegant">
+            </div>
             <div class="collection__right__element__content">
                 <h3>Élégant</h3>
                 <span>
@@ -176,7 +184,9 @@
             </div>
         </div>
         <div class="collection__right__element element-2">
-            <img src="assets/img/elegant.png" alt="Meuble Elegant">
+            <div class="collection__right__element__image">
+                <img src="assets/img/product-2.png" alt="Meuble Elegant">
+            </div>            
             <div class="collection__right__element__content">
                 <h3>Minimaliste</h3>
                 <span>
@@ -186,7 +196,10 @@
             </div>
         </div>
         <div class="collection__right__element element-3">
-            <img src="assets/img/elegant.png" alt="Meuble Elegant">
+            <div class="collection__right__element__image">
+                <img src="assets/img/product-3.png" alt="Meuble Elegant">
+            </div>
+            
             <div class="collection__right__element__content">
                 <h3>Moderne</h3>
                 <span>
@@ -228,9 +241,24 @@
 
 <!-- Script -->
 <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<!-- JQuery ZoomOnImage -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/js/elevatezoom.js"></script>
 <script>
      ScrollOut({
-      targets: 'section.product'
+      targets: 'section.product, section.artisan, section.collection, section.testimonials'
+    });
+
+    $('#img-collection').elevateZoom({
+        zoomType : "inner",
+        easing : true,
+        imageCrossfade: true,
+        cursor: "crosshair"
+    });
+    $('#product__left').elevateZoom({
+        zoomType    : "lens",
+        lensShape   : "round",
+        lensSize    : 100,
     });
 </script>
 

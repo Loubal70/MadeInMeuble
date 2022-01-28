@@ -18,11 +18,13 @@
         grid-area: carrousel;
         width: fit-content;
         height: fit-content;
+        user-select: none;
 
         img{
             width: 600px;
             height: 600px;
             object-fit: cover;
+            border-radius: 25px;
         }
 
         &__arrow{
@@ -32,10 +34,12 @@
             position: absolute;
             right: 0;
             bottom: -37px;
+            z-index: 1000;
 
             button{
                 width: 74px;
                 height: 74px;
+                font-size: 20px;
                 &:first-child{
                     background: white;
                     color: $rose;
@@ -53,6 +57,28 @@
         display: flex;
         align-items: flex-end;
 
+        &__image{
+            display: inline-table;
+            width: 260px;
+            height: 260px;
+            overflow: hidden;
+            border-radius: 10px;
+
+            img{
+                width: 260px;
+                height: 260px;
+                object-fit: cover;
+                transition: transform .5s, filter 1s ease-in-out;
+                filter: blur(2px);
+                transform: scale(1.2);
+            }
+
+            &:hover img{
+                filter: blur(0);
+                transform: scale(1);
+            }
+        }
+
         &.element-{
             &1{
                 grid-area: element1;
@@ -65,11 +91,7 @@
             }
         }
 
-        img{
-            width: 260px;
-            height: 260px;
-            object-fit: cover;
-        }
+        
 
         &__content{
             margin-bottom: 10px;
@@ -93,7 +115,14 @@
             a{
                 font-weight: bold;
                 i{
-                    margin-left: 35px;
+                    margin-left: 10px;
+                    transition: margin-left .5s ease;
+                }
+
+                &:hover{
+                    i{
+                        margin-left: 20px;
+                    }
                 }
             }
         }

@@ -71,23 +71,23 @@ h1{
         color: $rose;
     }
 }
-
-@keyframes top {
-    0% {
-        transform: translateY(-30px);
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1;
-        transform: none
+strong{
+    transition: color .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    &:hover{
+        color: $rose;
     }
 }
 
+@import 'animations.scss';
 @import 'component/header.scss';
 
 // Sections
 section{
+
+    &[data-scroll="in"] .title{
+        animation: top 1s .2s both;
+    }
+
     span.category{
         color: $rose;
         font-size: 20px;

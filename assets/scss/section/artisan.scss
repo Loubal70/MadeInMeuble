@@ -12,4 +12,100 @@
     img{
         width: auto;
     }
+
+    &__left {
+        z-index: 100;
+        p{
+            strong{
+                position: relative;
+                transition: opacity .5s ease;
+                &:hover {
+                    cursor: pointer;
+                    // &:before{
+                    //     position: absolute;
+                    //     content: "";
+                    //     left: -3rem;
+                    //     bottom: 25%;
+
+                    //     border: solid;
+                    //     border-color: #444 transparent;
+                    //     border-width: 12px 6px 0 6px;
+                    //     transform: rotate(180deg);
+                    // }
+
+                    &:after{
+                        display: flex;
+                        justify-content: center;
+                        background: #444;
+                        border-radius: 8px;
+                        color: #fff;
+                        content: attr(title);
+                        font-size: 16px;
+                        padding: 13px;
+                        width: 30rem;
+                        left: 50%;
+                        transform: translateX(-40%);
+                        position: absolute;
+                        bottom: -100px;
+                        text-align: initial;
+                        z-index: 100;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    
+    &__right{
+        position: relative;
+        
+        &__content{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 30px;
+            border-radius: 0 0 30px 30px;
+            background: linear-gradient(0deg, rgba(0,0,0,.7) 0%, rgba(255,255,255,0) 100%);
+            opacity: 0;
+            height: 0;
+            transition: opacity .7s ease, height 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            overflow: hidden;
+
+            h3{
+                font-size: 2rem;
+                font-weight: 600;
+                margin-bottom: 10px;
+                color: white;
+            }
+            p{
+                color: white;
+                line-height: 160%;
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 1.1rem;
+            }
+            
+        }
+
+        &:hover &__content{
+            opacity: 1;
+            height: 200px;
+            // transition: height 1s ease-out;
+        }
+    }
+
+    &[data-scroll='in'] {
+        .artisan__left{
+            p{
+                animation: top 1s .4s both;
+            }
+        }
+
+        .artisan__right{
+            animation: right 1s .4s both;
+        }
+    }
 }

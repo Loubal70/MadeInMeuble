@@ -3,6 +3,13 @@
     justify-content: space-around;
     align-items: flex-start;
     gap: 65px;
+    user-select: none;
+
+    &[data-scroll="in"]{
+        img.product__left{
+            animation: left 1s .4s both;
+        }
+    }
 
     &__details{
         
@@ -10,6 +17,10 @@
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+
+            &:hover img path{
+                fill: white;
+            }
 
             &__left{
                 display: flex;
