@@ -8,6 +8,10 @@
 Dans le cadre d'un travail étudiant, nous avons dû re-designer une page produit du site https://www.made-in-meubles.com/. <br>
 Les consignes étaient de réaliser une maquette puis la développer en desktop bloqué sous une largeur spécifique. La responsive n'était pas demandé, uniquement un travail approfondi sur les animations CSS.
 
+
+![banner](https://image.freepik.com/free-photo/white-wall-living-room-have-sofa-decoration-3d-rendering_41470-3282.jpg)
+
+
 ## Informations
 
 - Requires at least : ![GULP](https://img.shields.io/badge/GULP-Required-orange)
@@ -19,4 +23,4 @@ Diverses animations sont proposées :
 - Les images ont plusieurs effets, certains dévoilent des informations, d'autre se déflouttent...
 - La section artisan a des tooltips sur les textes en gras
 
-![banner](https://image.freepik.com/free-photo/white-wall-living-room-have-sofa-decoration-3d-rendering_41470-3282.jpg)
+
