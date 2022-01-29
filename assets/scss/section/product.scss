@@ -6,9 +6,24 @@
     user-select: none;
 
     &[data-scroll="in"]{
+
         img.product__left{
             animation: left 1s .4s both;
         }
+        .product__details__mark{
+            animation: top 1s .4s both;
+        }
+        .product__details p{
+            animation: top 1s .5s both;
+        }
+        .product__details__bottom{
+            animation: top 1s .6s both;
+        }
+        .product__details__infos{
+            animation: top 1s .7s both;
+        }
+        
+        
     }
     
     a.btn:hover{
@@ -21,6 +36,7 @@
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            
 
             &:hover img path{
                 fill: white;
