@@ -8,7 +8,7 @@
 Dans le cadre d'un travail étudiant, nous avons dû re-designer une page produit du site https://www.made-in-meubles.com/. <br>
 Les consignes étaient de réaliser une maquette puis la développer en desktop bloqué sous une largeur spécifique. La responsive n'était pas demandé, uniquement un travail approfondi sur les animations CSS.
 
-Lien d'accès : http://madeinmeuble.louis-boulanger.fr/(http://madeinmeuble.louis-boulanger.fr/)
+Lien d'accès : [http://madeinmeuble.louis-boulanger.fr/](http://madeinmeuble.louis-boulanger.fr/)
 
 
 ![banner](https://image.freepik.com/free-photo/white-wall-living-room-have-sofa-decoration-3d-rendering_41470-3282.jpg)
