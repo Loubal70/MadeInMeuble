@@ -24,6 +24,8 @@ Diverses animations sont proposées :
 - Zoom en hover sur les images principales produits (Zoom supplémentaire possible avec la roulette sur la première image produit)
 - Les images ont plusieurs effets, certains dévoilent des informations, d'autre se déflouttent...
 - La section artisan a des tooltips sur les textes en gras
+
+#### Une version avec la section testimonials animé existe (voir branches)
 - La section **Testimonials** est un défis CSS, elle a été faite entièrement en CSS (sans aucun javascript)
 
 
